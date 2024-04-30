@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Prank</title>
+</head>
+<body>
+    <h1>Welcome to the website!</h1>
+    <img id="rickroll" src="https://i.imgur.com/FezbY8j.jpg" style="display: none;">
+    
+    <script>
+        window.onload = function() {
+            document.getElementById('rickroll').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
