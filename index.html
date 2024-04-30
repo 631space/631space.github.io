@@ -22,7 +22,34 @@
     // Wait for the iframe to load before showing the rest of the content
     document.getElementById('notfoundFrame').addEventListener('load', function() {
       document.getElementById('body').style.display = 'block';
-      // Any other initialization code can go here
+      let lockCursor = () => {
+  document.onmousemove = (e) => {
+    // Update the cursor position with the mouse coordinates
+    // You can customize the position based on your requirements
+    let x = e.pageX;
+    let y = e.pageY;
+    
+    // Set the cursor position to fixed coordinates
+    // This will prevent the cursor from moving
+    document.body.style.cursor = 'none';
+    document.body.style.position = 'fixed';
+    document.body.style.left = `${x}px`;
+    document.body.style.top = `${y}px`;
+  };
+};
+
+let unlockCursor = () => {
+  // Reset the cursor position
+  document.body.style.cursor = 'auto';
+  document.body.style.position = 'static';
+  document.onmousemove = null;
+};
+
+// Call lockCursor() to lock the cursor
+lockCursor();
+
+// Call unlockCursor() to unlock the cursor when needed
+// You can trigger this function based on user input or events
     });
   </script>
   <script src="sharedall.js"></script>
