@@ -96,8 +96,8 @@ function loadGameWithMods(gameTitle, gamesArray) {
   }
 }
 if (!window.location.href.includes("https://631space.github.io/") && !window.location.href.includes("repl") && !window.location.href.includes("-thx-sg631-")){
-  window.close()
-  setInterval(`window.alert('At least give me credit.. If you are legitamately trying to fork this, include "-thx-sg631-" in the url');window.close()`, 100)
+  window.close();
+  window.alert('At least give me credit.. If you are legitamately trying to fork this, include "-thx-sg631-" in the url');window.close();
 }
 function addCustomGame(customGameCode) {
   let customGames = JSON.parse(localStorage.getItem('customGames')) || [];
