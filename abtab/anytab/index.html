@@ -1,7 +1,59 @@
-<!DOCTYPE html> <html> <head> <title>Open URL in new tab</title> </head> <body> <input type="text" id="urlInput" placeholder="Enter URL"> <button onclick="openInNewTab()">Open URL</button><script>
-    function openInNewTab() {
-        var url = document.getElementById("urlInput").value;
-        var newTab = window.open('about:blank');
-        newTab.document.write('<iframe src="' + url + '" width="100%" height="100%"></iframe>');
-    }
-</script></body> </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open URL in new tab</title>
+    <style>
+        body {
+            background-color: /*dark theme */ #1c1c1c;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #urlInput {
+            width: 90%;
+            height: 40px;
+            margin: 10px;
+            font-size: 18px;
+            border: 1px solid #1b1b1b;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: /*DARK THEME*/ #2c2c2c;
+            color: #ffffff;
+            box-sizing: border-box;
+            outline: none;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="urlInput" placeholder="Enter URL" spellcheck="false">
+    <br>
+    <button onclick="openInNewTab()">Open URL</button>
+    <button onclick="clearInput()">Clear Input</button>
+    <script>
+        function openInNewTab() {
+            var url = document.getElementById("urlInput").value;
+            var newTab = window.open('about:blank');
+            newTab.document.write('<iframe src="' + url + '" width="100%" height="100%"></iframe>');
+        }
+        function clearInput() {
+            document.getElementById("urlInput").value = "";
+        }
+    </script>
+</body>
+</html>
