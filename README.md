@@ -6,4 +6,4 @@ PLEASE PLEASE PLEASE create an Issue if you want to get my attention about takin
 
 FORKING
 ============================
-If you would like to copy the website, include <b>-thx-sg631-</b> in the URL to credit me, and do not make a phishing version.
+If you would like to copy the website, include <b>-thx-Iamh1m2-</b> in the URL to credit me, and do not make a phishing version.
