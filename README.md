@@ -2,7 +2,7 @@ Hi, this is a site with some games! Eventually, I will have only my games on her
 
 COPYRIGHT & TAKEDOWN
 =============================
-PLEASE PLEASE PLEASE create an Issue if you want to get my attention about taking down a game you own. I fully understand, just please use the issues, don't sue me.
+PLEASE PLEASE PLEASE create an Issue if you want to get my attention about taking down a game you own. I fully understand, just please use the issues, don't sue me!
 
 FORKING
 ============================
